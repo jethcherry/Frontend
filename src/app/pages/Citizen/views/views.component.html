@@ -1,0 +1,60 @@
+<div class="background-image-container">
+  <h1><span>Citizen</span> Views</h1>
+  <hr>
+  <!-- grid templates -->
+
+
+   <!--  template 1-->
+  <div class="card-row">
+    <div class="card">
+      <img src="financebill.jpeg" alt="Image 1" class="card-image">
+      <div class="card-content">
+        <h2>Understanding the Finance Bill</h2>
+        <p>A detailed explanation of the key provisions in the latest Finance 
+          Bill, aimed at educating citizens on its impact......</p>
+        <p> July 11, 2024</p>
+        <p>Harvey Williams</p>
+      </div>
+      <div class="card-buttons">
+        <button>View Details</button>
+      </div>
+    </div>
+<!--template 2  -->
+    <div class="card">
+      <img src="transport.jpeg" alt="transport" class="card-image">
+      <div class="card-content">
+        <h2> Improving Public Transportation</h2>
+        <p> Suggestions for enhancing public transportation services based on 
+          citizen feedback and expert opinions....</p>
+        <p>July 11, 2024</p>
+        <p>Jethro</p>
+      </div>
+      <div class="card-buttons">
+        <button>View Details</button>
+      </div>
+    </div>
+  </div>
+
+<!-- template 3 -->
+  <div class="card">
+    <div class="card-content">
+      <img src="view.webp" alt="">
+      <p>Text with Image 2</p>
+    </div>
+  </div>
+
+  <div class="seperator"></div> 
+  
+<!--  template 4-->
+  <div class="form-card">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <h2 >Upload Image</h2>
+      <input type="file" accept="image/*, video/*, application/pdf, .doc, .docx, .ppt, .pptx, .xls, .xlsx" formControlName="Image" class="btn">
+      <input type="text" placeholder="Title" formControlName="Title">
+      <textarea placeholder="Description" formControlName="Description"></textarea>
+      <input type="text" placeholder="Date" formControlName="Date">
+      <input type="text" placeholder="Author" formControlName="Author">
+      <button type="submit">Add View</button>
+    </form>
+  </div>
+</div>
